@@ -5,6 +5,7 @@
     justify-content: flex-end;
     padding-right:0 40px;
     margin-top: 80px;
+    cursor: pointer;
 }
 
 .home-a{
@@ -22,21 +23,24 @@
     color: #ff6464;
 }
 
-#leftsection, #rightsection{
+#leftsection{
+    width:50%;
+}
+ #rightsection{
     padding: 50px 0;
-    width: 50%
+    width: 50%;
 }
 
 section{
     padding: 0 40px;
     display: flex;
+
 }
 #rightsection img{
     width: 250px;
     height: 250px;
     border-radius: 50%;
     float: right;
-    object-position: ;
 }
 #leftsection button{
     background-color: #ff6464;
@@ -45,4 +49,22 @@ section{
     margin-top: 30px;
     border-radius: 10px;
     font-weight: bold;
+    cursor: pointer;
 }
+
+.sect-two {
+    display: flex;
+    flex-direction: column;
+}
+#first{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#second {
+    display: flex;
+    justify-content: space-between;
+}
+

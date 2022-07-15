@@ -1,0 +1,48 @@
+.home-ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right:0 40px;
+    margin-top: 80px;
+}
+
+.home-a{
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    padding:0 10px;
+    font-family: 'Heebo',sans-serif;
+    font-style: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+.active{
+    color: #ff6464;
+}
+
+#leftsection, #rightsection{
+    padding: 50px 0;
+    width: 50%
+}
+
+section{
+    padding: 0 40px;
+    display: flex;
+}
+#rightsection img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    float: right;
+    object-position: ;
+}
+#leftsection button{
+    background-color: turquoise;
+    border: 0;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+}

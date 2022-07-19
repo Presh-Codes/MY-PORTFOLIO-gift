@@ -4,9 +4,6 @@ html {
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
     font-size: 16px;
     font-family: 'Heebo', sans-serif;
     scroll-behavior: smooth;
@@ -27,15 +24,15 @@ body * {
     padding-inline: 2rem;
 }
 
-#banner-button {
+#button {
     cursor: pointer;
 }
 
-#banner-button:hover {
+#button:hover {
     background-color: #ff6464ba;
 }
 
-.hamburger {
+.head {
     display: none;
 }
 
@@ -65,7 +62,7 @@ body * {
     text-decoration: none;
 }
 
-.sect-one {
+.section-one {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -73,30 +70,30 @@ body * {
     padding-block: 70px;
 }
 
-.sect-one>div:nth-child(1) {
+.section-one>div:nth-child(1) {
     width: 50%;
     padding: 70px 0;
 }
 
-.sect-one>div:nth-child(2) {
+.section-one>div:nth-child(2) {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.banner-head {
+.heading {
     font-size: 44px;
     font-weight: 700;
     line-height: 60px;
     margin: 0;
 }
 
-.sect-one div>p {
+.section-one div>p {
     margin: 30px 0;
 }
 
-.sect-one div>button {
+.section-one div>button {
     background: #FF6464;
     border-style: none;
     padding: 15px 30px;
@@ -113,17 +110,17 @@ body * {
     height: 270px;
 }
 
-.sect-two {
+.section-two {
     background: #EDF7FA;
     padding-block: 70px;
 }
 
-.sect-two-head {
+.section-two-head {
     display: flex;
     justify-content: space-between;
 }
 
-.sect-two-head p:nth-child(2) {
+.section-two-head p:nth-child(2) {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -131,47 +128,47 @@ body * {
     color: #00A8CC;
 }
 
-.sect-two-head p:nth-child(1) {
+.section-two-head p:nth-child(1) {
     font-size: 22px;
 }
 
-.sect-two-wrapper {
+.section-two-content {
     display: flex;
     justify-content: space-between;
 }
 
-.sect-two-wrapper>div {
+.section-two-content>div {
     background-color: #fff;
     width: 49%;
     padding: 20px 27px;
     border-radius: 4px;
 }
 
-.sect-two-wrapper div>div h3 {
+.section-two-content div>div h3 {
     font-size: 26px;
     font-weight: 700;
     line-height: 38px;
     margin: 0;
 }
 
-.sect-two-date p {
+.section-two-date p {
     margin: 0;
 }
 
-.sect-two-date p:nth-child(even) {
+.section-two-date p:nth-child(even) {
     padding: 0px 25px;
 }
 
-.sect-two-date {
+.section-two-date {
     display: flex;
     margin: 26px 0;
 }
 
-.sect-three {
+.section-three {
     padding-block: 70px;
 }
 
-.sect-three>p {
+.section-three>p {
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
@@ -179,41 +176,41 @@ body * {
     color: #21243D;
 }
 
-.sect-three>div {
+.section-three>div {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #E0E0E0;
     padding: 20px 0;
 }
 
-.sect-three>div>div:nth-child(1) {
+.section-three>div>div:nth-child(1) {
     width: auto;
 }
 
-.sect-three>div>div:nth-child(2) {
+.section-three>div>div:nth-child(2) {
     margin-inline-start: 2rem;
     flex-grow: 1;
     width: auto;
 }
 
-.sect-three-date {
+.section-three-date {
     display: flex;
     align-items: center;
     padding: 25px 0;
 }
 
-.sect-three>div h5 {
+.section-three>div h5 {
     font-size: 30px;
     font-weight: 700;
     line-height: 44px;
     margin: 0;
 }
 
-.sect-three>div p {
+.section-three>div p {
     margin: 0;
 }
 
-.sect-three-date>p:nth-child(1) {
+.section-three-date>p:nth-child(1) {
     background: #142850;
     border-radius: 16px;
     color: #fff;
@@ -223,7 +220,7 @@ body * {
     margin-right: 20px;
 }
 
-.sect-three-date>p:nth-child(2) {
+.section-three-date>p:nth-child(2) {
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
@@ -234,8 +231,8 @@ body * {
 
 @media screen and (max-width: 992px) {
 
-    .sect-two-wrapper>div:nth-child(1),
-    .sect-two-wrapper>div:nth-child(2) {
+    .section-two-content>div:nth-child(1),
+    .section-two-content>div:nth-child(2) {
         margin: 5px 5px;
     }
 }
@@ -245,17 +242,17 @@ body * {
         display: none;
     }
 
-    .hamburger {
+    .head {
         display: block;
     }
 
-    .hamburger-wrapper {
+    .head-content {
         display: flex;
         justify-content: end;
         width: 97%;
     }
 
-    .sect-one {
+    .section-one {
         flex-wrap: wrap;
         width: 90%;
         padding: 0px 0px;
@@ -264,7 +261,7 @@ body * {
         position: relative;
     }
 
-    .sect-one>div:nth-child(1) {
+    .section-one>div:nth-child(1) {
         width: 100%;
         padding: 0;
         margin: 50px 0;
@@ -273,25 +270,25 @@ body * {
         right: 0;
     }
 
-    .sect-one>div:nth-child(2) {
+    .section-one>div:nth-child(2) {
         width: 100%;
         padding-top: 30px;
     }
 
-    .banner-head {
+    .heading {
         font-family: 'Heebo';
         font-size: 32px;
         font-weight: 700;
         line-height: 40px;
     }
 
-    .sect-one div>p {
+    .section-one div>p {
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
     }
 
-    .sect-one div>button {
+    .section-one div>button {
         background: #FF6464;
         border-style: none;
         padding: 15px 30px;
@@ -301,57 +298,57 @@ body * {
         border-radius: 2px;
     }
 
-    .sect-two {
+    .section-two {
         width: 100%;
         padding: 10px 0;
         margin-top: 390px;
     }
 
-    .sect-two-wrapper {
+    .section-two-content {
         flex-wrap: wrap;
         width: 90%;
         margin: auto;
     }
 
-    .sect-two-wrapper>div:nth-child(1),
-    .sect-two-wrapper>div:nth-child(2) {
+    .section-two-content>div:nth-child(1),
+    .section-two-content>div:nth-child(2) {
         width: 100%;
         margin: 10px 0;
         border-radius: 4px;
     }
 
-    .sect-two-wrapper div>div h3 {
+    .section-two-content div>div h3 {
         font-size: 22px;
     }
 
-    .sect-two-head>p:nth-child(2) {
+    .section-two-head>p:nth-child(2) {
         display: none;
     }
 
-    .sect-two-head {
+    .section-two-head {
         justify-content: center;
     }
 
-    .sect-three {
+    .section-three {
         width: 90%;
         padding: 0;
         margin: auto;
     }
 
-    .sect-three>div {
+    .section-three>div {
         width: 100%;
         flex-wrap: wrap;
     }
 
-    .sect-three>div>div:nth-child(1) {
+    .section-three>div>div:nth-child(1) {
         width: 100%;
     }
 
-    .sect-three>div>div:nth-child(2) {
+    .section-three>div>div:nth-child(2) {
         margin-inline-start: 0rem;
     }
 
-    .sect-three img{
+    .one-img{
         width: 100%;
     }
 

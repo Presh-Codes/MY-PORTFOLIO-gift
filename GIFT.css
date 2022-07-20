@@ -229,13 +229,10 @@ body * {
     color: #8695A4;
 }
 
-@media screen and (max-width: 992px) {
-
     .section-two-content>div:nth-child(1),
     .section-two-content>div:nth-child(2) {
         margin: 5px 5px;
     }
-}
 
 @media screen and (max-width: 576px) {
     .home-header {
